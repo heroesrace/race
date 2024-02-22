@@ -112,7 +112,7 @@ animation: night 45s linear infinite;
     text-align: center;
   }
   .road-container {
-    height: 90px;
+    height: 82px;
 	top: 53px;
 	padding: 0px;
     width: 101%;
@@ -120,7 +120,7 @@ animation: night 45s linear infinite;
     position: relative;
   }
   .road {
-    height: 89px;
+    height: 81px;
     width: 200%;
     background-image: url("road.jpg");
     background-repeat: repeat-x;
@@ -391,6 +391,20 @@ animation: night 45s linear infinite;
   transform-origin: bottom;
   z-index: 5;
 }
+.zarafin-car {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  background-image: url('car_zarafin.gif'); /* Укажите путь к новому изображению */
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 1;
+  left: 0;
+  margin-top: -70px;
+  transform-origin: bottom;
+  z-index: 5;
+}
 
   .flag {
     width: 90px;
@@ -520,7 +534,8 @@ animation: night 45s linear infinite;
 	<option value="7">CONOR</option>
 	<option value="8">MAYA</option>
 	<option value="9">RYAN</option>
-	<option value="10">TOM</option>
+  <option value="10">ZARAFIN</option>
+	<option value="11">TOM</option>
   </select>
   <label for="amount">Enter your deposit: </label>
   <input type="number" id="amount">
@@ -663,11 +678,27 @@ animation: night 45s linear infinite;
     </div>
 		<div class="bushes3"></div>
   </div>
+
+  <div class="road-container">
+    
+    <div class="start-line"></div>
+    <div class="car zarafin-car" id="car8">
+      <div class="driver-info">
+        <div class="driver-name">ZARAFIN</div>
+        <div class="driver-position">Position: 0%</div>
+      </div>
+    </div>
+    <div class="flag" id="flag8"></div>
+    <div class="flag-text" id="flag-text8">VICTORY!</div>
+  <div class="road" id="road9">
+  </div>
+  <div class="bushes4"></div>
+</div>
   
   <div class="road-container">
     
       <div class="start-line"></div>
-      <div class="car tom-car" id="car8">
+      <div class="car tom-car" id="car9">
         <div class="driver-info">
           <div class="driver-name">TOM</div>
           <div class="driver-position">Position: 0%</div>
@@ -676,9 +707,9 @@ animation: night 45s linear infinite;
 </div>
         </div>
       </div>
-      <div class="flag" id="flag8"></div>
-      <div class="flag-text" id="flag-text8">VICTORY!</div>
-	  <div class="road" id="road9">
+      <div class="flag" id="flag9"></div>
+      <div class="flag-text" id="flag-text9">VICTORY!</div>
+	  <div class="road" id="road10">
     </div>
     <div class="bushes2"></div>
   </div>
@@ -726,6 +757,11 @@ animation: night 45s linear infinite;
 	{
       "name": "RYAN",
       "roadLength": 20000,
+      "position": 0
+    },
+    {
+      "name": "ZARAFIN",
+      "roadLength": 5000,
       "position": 0
     },
 	{
@@ -831,8 +867,10 @@ driversData[5].position =  30386 / driversData[5].roadLength;
 driversData[6].position =  27103 / driversData[6].roadLength;
 // Обновляем позицию водителя Ryan
 driversData[7].position =  0 / driversData[7].roadLength;
+// Обновляем позицию водителя Zarafin
+driversData[8].position =  0 / driversData[8].roadLength;
 // Обновляем позицию водителя Tom
-driversData[8].position =  172810 / driversData[8].roadLength;
+driversData[9].position =  172810 / driversData[9].roadLength;
 
 moveCar(0); // Переместить автомобиль первого водителя
 moveCar(1); // Переместить автомобиль второго водителя
@@ -843,6 +881,7 @@ moveCar(5); // Переместить автомобиль второго вод
 moveCar(6); // Переместить автомобиль второго водителя
 moveCar(7); // Переместить автомобиль второго водителя
 moveCar(8); // Переместить автомобиль второго водителя
+moveCar(9); // Переместить автомобиль второго водителя
 
   function showVictory(driverIndex) {
     var flag = document.getElementById("flag" + driverIndex);
