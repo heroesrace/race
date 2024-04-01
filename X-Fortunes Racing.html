@@ -8,35 +8,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 44px;
+    margin-top: 40px;
 	z-index:-3;
   }
   .background-image {
     width: 200%;
-    height: 200px;
-    background-image: url("city2.png");
+    height: 280px;
+    background-image: url("fans.gif");
     position: absolute;
     left: 0;
     right: 0;
-	bottom:800px;
+	bottom:790px;
     display: block;
     z-index: -1;
     background-repeat: repeat-x;
 }
-<!-- .sky-background { -->
-    <!-- width: 200%; -->
-    <!-- height: 290px; -->
-    <!-- background-image: url("sky.jpg"); /* Путь к изображению с небом */ -->
-    <!-- position: absolute; -->
-    <!-- left: 0; -->
-    <!-- right: 0; -->
-    <!-- bottom: 840px; -->
-    <!-- display: block; -->
-    <!-- z-index: -2; -->
 
-<!-- } -->
-
-.background-image {
+/* .background-image {
     width: 200%;
     height: 280px;
     position: absolute;
@@ -86,14 +74,14 @@ animation: night 45s linear infinite;
     100% {
       transform: translateX(-50%);
     }
-  }
+  } */
 
   .header-background {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 0px;
+    height: px;
     background-color: black;
     opacity: 0.6; /* Прозрачность черного фона */
     backdrop-filter: blur(20px); /* Измените значение размытия по вашему вкусу */
@@ -105,14 +93,14 @@ animation: night 45s linear infinite;
     position: relative;
     color: rgb(224, 64, 1);
     z-index: 1;
-    top: 133px;
+    top: 103px;
     backdrop-filter: blur(3px); /* Добавляем размытие */
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px; /* Добавляем отступ для лучшего визуального эффекта */
+    padding: 40px; /* Добавляем отступ для лучшего визуального эффекта */
     text-align: center;
   }
   .road-container {
-    height: 82px;
+    height: 89px;
 	top: 53px;
 	padding: 0px;
     width: 101%;
@@ -120,7 +108,7 @@ animation: night 45s linear infinite;
     position: relative;
   }
   .road {
-    height: 81px;
+    height: 88px;
     width: 200%;
     background-image: url("road.jpg");
     background-repeat: repeat-x;
@@ -275,7 +263,7 @@ animation: night 45s linear infinite;
   position: absolute;
   bottom: 1;
   left: 0;
-  margin-top: -65px;
+  margin-top: -73px;
   transform-origin: bottom;
   z-index: 5;
 }
@@ -323,32 +311,19 @@ animation: night 45s linear infinite;
 }
 .maya-car {
   text-align: center;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   background-image: url('car_maya.gif'); /* Укажите путь к новому изображению */
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   bottom: 1;
   left: 0;
-  margin-top: -75px;
+  margin-top: -65px;
   transform-origin: bottom;
   z-index: 5;
 }
-.adam-car {
-  text-align: center;
-  width: 280px;
-  height: 280px;
-  background-image: url('car_adam.gif'); /* Укажите путь к новому изображению */
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: 1;
-  left: 0;
-  margin-top: -63px;
-  transform-origin: bottom;
-  z-index: 5;
-}
+
 .chris-car {
   text-align: center;
   width: 300px;
@@ -407,8 +382,8 @@ animation: night 45s linear infinite;
 }
 
   .flag {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     background-image: url('flag.gif');
     background-size: cover;
     position: absolute;
@@ -504,8 +479,8 @@ animation: night 45s linear infinite;
   background-repeat: no-repeat; /* Запретить повторение фона */
   width: 150px; /* Желаемая ширина изображения */
   height: 150px;
-  margin-top: -70px;
-  margin-left: 140px;
+  margin-top: 10px;
+  margin-left: 120px;
   z-index: 5;
 }
 
@@ -513,7 +488,7 @@ animation: night 45s linear infinite;
 </style>
 <audio id="carAudio" src="car_sound.mp3"></audio>
 <div class="grass-background"></div>
-<h1 class="header">Marvel Heroes</h1>
+<h1 class="header"></h1>
 <div class="scrat"></div> <!--Белка-->
 <div class="background-image">
 </div>
@@ -529,13 +504,12 @@ animation: night 45s linear infinite;
     <option value="1">SASHA</option>
     <option value="2">CHRIS N</option>
     <option value="3">GEORGE</option>
-    <option value="4">ADAM</option>
-	<option value="6">BRIAN</option>
-	<option value="7">CONOR</option>
-	<option value="8">MAYA</option>
-	<option value="9">RYAN</option>
-  <option value="10">ZARAFIN</option>
-	<option value="11">TOM</option>
+	<option value="4">BRIAN</option>
+	<option value="5">CONOR</option>
+	<option value="6">MAYA</option>
+	<option value="7">RYAN</option>
+  <option value="8">ZARAFIN</option>
+	<option value="9">TOM</option>
   </select>
   <label for="amount">Enter your deposit: </label>
   <input type="number" id="amount">
@@ -614,13 +588,14 @@ animation: night 45s linear infinite;
     </div>
 		<div class="bushes3"></div>
   </div>
+
   
-   <div class="road-container">
+  <div class="road-container">
     
       <div class="start-line"></div>
-      <div class="car adam-car" id="car4">
+      <div class="car brian-car" id="car4">
         <div class="driver-info">
-          <div class="driver-name">ADAM</div>
+          <div class="driver-name">BRIAN</div>
           <div class="driver-position">Position: 0%</div>
         </div>
       </div>
@@ -628,15 +603,15 @@ animation: night 45s linear infinite;
       <div class="flag-text" id="flag-text4">VICTORY!</div>
 	  <div class="road" id="road5">
     </div>
-		<div class="bushes1"></div>
+	<div class="bushes2"></div>
   </div>
   
   <div class="road-container">
     
       <div class="start-line"></div>
-      <div class="car brian-car" id="car5">
+      <div class="car maya-car" id="car5">
         <div class="driver-info">
-          <div class="driver-name">BRIAN</div>
+          <div class="driver-name">MAYA</div>
           <div class="driver-position">Position: 0%</div>
         </div>
       </div>
@@ -644,15 +619,15 @@ animation: night 45s linear infinite;
       <div class="flag-text" id="flag-text5">VICTORY!</div>
 	  <div class="road" id="road6">
     </div>
-	<div class="bushes2"></div>
+	<div class="bushes4"></div>
   </div>
   
-  <div class="road-container">
+   <div class="road-container">
     
       <div class="start-line"></div>
-      <div class="car maya-car" id="car6">
+      <div class="car ryan-car" id="car6">
         <div class="driver-info">
-          <div class="driver-name">MAYA</div>
+          <div class="driver-name">RYAN</div>
           <div class="driver-position">Position: 0%</div>
         </div>
       </div>
@@ -660,37 +635,21 @@ animation: night 45s linear infinite;
       <div class="flag-text" id="flag-text6">VICTORY!</div>
 	  <div class="road" id="road7">
     </div>
-	<div class="bushes4"></div>
-  </div>
-  
-   <div class="road-container">
-    
-      <div class="start-line"></div>
-      <div class="car ryan-car" id="car7">
-        <div class="driver-info">
-          <div class="driver-name">RYAN</div>
-          <div class="driver-position">Position: 0%</div>
-        </div>
-      </div>
-      <div class="flag" id="flag7"></div>
-      <div class="flag-text" id="flag-text7">VICTORY!</div>
-	  <div class="road" id="road8">
-    </div>
 		<div class="bushes3"></div>
   </div>
 
   <div class="road-container">
     
     <div class="start-line"></div>
-    <div class="car zarafin-car" id="car8">
+    <div class="car zarafin-car" id="car7">
       <div class="driver-info">
         <div class="driver-name">ZARAFIN</div>
         <div class="driver-position">Position: 0%</div>
       </div>
     </div>
-    <div class="flag" id="flag8"></div>
-    <div class="flag-text" id="flag-text8">VICTORY!</div>
-  <div class="road" id="road9">
+    <div class="flag" id="flag7"></div>
+    <div class="flag-text" id="flag-text7">VICTORY!</div>
+  <div class="road" id="road8">
   </div>
   <div class="bushes4"></div>
 </div>
@@ -698,7 +657,7 @@ animation: night 45s linear infinite;
   <div class="road-container">
     
       <div class="start-line"></div>
-      <div class="car tom-car" id="car9">
+      <div class="car tom-car" id="car8">
         <div class="driver-info">
           <div class="driver-name">TOM</div>
           <div class="driver-position">Position: 0%</div>
@@ -707,9 +666,9 @@ animation: night 45s linear infinite;
 </div>
         </div>
       </div>
-      <div class="flag" id="flag9"></div>
-      <div class="flag-text" id="flag-text9">VICTORY!</div>
-	  <div class="road" id="road10">
+      <div class="flag" id="flag8"></div>
+      <div class="flag-text" id="flag-text8">VICTORY!</div>
+	  <div class="road" id="road9">
     </div>
     <div class="bushes2"></div>
   </div>
@@ -736,11 +695,6 @@ animation: night 45s linear infinite;
 	{
       "name": "GEORGE",
       "roadLength": 100000,
-      "position": 0
-    },
-	{
-      "name": "ADAM",
-      "roadLength": 60000,
       "position": 0
     },
 	{
@@ -776,7 +730,8 @@ var tomSupportMessages = [
   "Come on!",
   "Do it together!",
   "To the end!",
-  "Who wants kebabs?",
+  "Let's attack!",
+  "Who will score first?",
 
   // Добавьте другие сообщения поддержки для TOM
 ];
@@ -859,18 +814,16 @@ driversData[1].position = 0 / driversData[1].roadLength;
 driversData[2].position = 0 / driversData[2].roadLength;
 // Обновляем позицию водителя George
 driversData[3].position =  0 / driversData[3].roadLength;
-// Обновляем позицию водителя Adam
-driversData[4].position =  0 / driversData[4].roadLength;
 // Обновляем позицию водителя Brian
-driversData[5].position =  0 / driversData[5].roadLength;
+driversData[4].position =  0 / driversData[4].roadLength;
 // Обновляем позицию водителя Maya
-driversData[6].position =  0 / driversData[6].roadLength;
+driversData[5].position =  0 / driversData[5].roadLength;
 // Обновляем позицию водителя Ryan
-driversData[7].position =  0 / driversData[7].roadLength;
+driversData[6].position =  0 / driversData[6].roadLength;
 // Обновляем позицию водителя Zarafin
-driversData[8].position =  0 / driversData[8].roadLength;
+driversData[7].position =  0 / driversData[7].roadLength;
 // Обновляем позицию водителя Tom
-driversData[9].position =  0 / driversData[9].roadLength;
+driversData[8].position =  0 / driversData[8].roadLength;
 
 moveCar(0); // Переместить автомобиль первого водителя
 moveCar(1); // Переместить автомобиль второго водителя
@@ -881,7 +834,6 @@ moveCar(5); // Переместить автомобиль второго вод
 moveCar(6); // Переместить автомобиль второго водителя
 moveCar(7); // Переместить автомобиль второго водителя
 moveCar(8); // Переместить автомобиль второго водителя
-moveCar(9); // Переместить автомобиль второго водителя
 
   function showVictory(driverIndex) {
     var flag = document.getElementById("flag" + driverIndex);
