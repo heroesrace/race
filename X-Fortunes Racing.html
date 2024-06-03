@@ -18,7 +18,7 @@
     position: absolute;
     left: 0;
     right: 0;
-	bottom:890px;
+	bottom:650px;
     display: block;
     z-index: -1;
     background-repeat: repeat-x;
@@ -40,7 +40,7 @@
     position: relative;
     color: rgb(224, 64, 1);
     z-index: 1;
-    top: 103px;
+    top: 153px;
     backdrop-filter: blur(3px); /* Добавляем размытие */
     background-color: rgba(0, 0, 0, 0.7);
     padding: 40px; /* Добавляем отступ для лучшего визуального эффекта */
@@ -410,8 +410,8 @@
     transform: translateX(-50%);
   }
   #tournament-table-container {
-    position: fixed;
-    top: 5px;
+    position: absolute;
+    top: -50px;
     right: 10px;
     background-color: white;
     padding: 10px;
@@ -441,12 +441,11 @@
   background-repeat: no-repeat; /* Запретить повторение фона */
   width: 150px; /* Желаемая ширина изображения */
   height: 150px;
-  margin-top: 10px;
+  margin-top: 60px;
   margin-left: 120px;
   z-index: 5;
 }
 </style>
-<audio id="carAudio" src="car_sound.mp3"></audio>
 <div class="grass-background"></div>
 <h1 class="header"></h1>
 <div class="scrat"></div> <!--Белка-->
@@ -821,6 +820,8 @@ function moveCar(selectedDriver) {
  
   requestAnimationFrame(animate);
 }
+
+
 //Jayden
 driversData[0].position = 2355 / driversData[0].roadLength;
 //Sasha
