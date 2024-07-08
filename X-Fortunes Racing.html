@@ -577,14 +577,12 @@
   <div class="road" id="road6"></div>
 </div>
 
-
-
 <div class="road-container">
   <div class="start-line"></div>
-  <div class="car george-car" id="car6">
+  <div class="car brian-car" id="car6">
     <div class="driver-info">
-          <img src="rs.svg" class="driver-flag" alt="Flag">
-          <div class="driver-name">VICTOR</div>
+          <img src="sk.svg" class="driver-flag" alt="Flag">
+          <div class="driver-name">DAVID</div>
           <div class="driver-position">Position: 0%</div>
       </div>
   </div>
@@ -593,40 +591,11 @@
   <div class="road" id="road7"></div>
 </div>
 
-<div class="road-container">
-  <div class="start-line"></div>
-  <div class="car jayden-car" id="car7">
-    <div class="driver-info">
-          <img src="sk.svg" class="driver-flag" alt="Flag">
-          <div class="driver-name">MAREK</div>
-          <div class="driver-position">Position: 0%</div>
-      </div>
-  </div>
-  <div class="flag" id="flag7"></div>
-  <div class="flag-text" id="flag-text7">VICTORY!</div>
-  <div class="road" id="road8"></div>
-</div>
 
 
 <div class="road-container">
   <div class="start-line"></div>
-  <div class="car brian-car" id="car8">
-    <div class="driver-info">
-          <img src="sk.svg" class="driver-flag" alt="Flag">
-          <div class="driver-name">DAVID</div>
-          <div class="driver-position">Position: 0%</div>
-      </div>
-  </div>
-  <div class="flag" id="flag8"></div>
-  <div class="flag-text" id="flag-text8">VICTORY!</div>
-  <div class="road" id="road9"></div>
-</div>
-
-
-
-<div class="road-container">
-  <div class="start-line"></div>
-  <div class="car tom-car" id="car9">
+  <div class="car tom-car" id="car7">
     <div class="driver-info">
           <img src="am.svg" class="driver-flag" alt="Flag">
           <div class="driver-name">DOM</div>
@@ -636,11 +605,27 @@
           </div>
       </div>
   </div>
-  <div class="flag" id="flag9"></div>
-  <div class="flag-text" id="flag-text9">VICTORY!</div>
-  <div class="road" id="road10"></div>
+  <div class="flag" id="flag7"></div>
+  <div class="flag-text" id="flag-text7">VICTORY!</div>
+  <div class="road" id="road8"></div>
 </div>
 
+
+
+<div class="road-container">
+  <div class="start-line"></div>
+  <div class="car jayden-car" id="car8">
+    <div class="driver-info">
+          <img src="euro.jpg" class="driver-flag" alt="Flag">
+          <div class="driver-name">TEAM</div>
+          <div class="driver-position">Position: 0%</div>
+         
+      </div>
+  </div>
+  <div class="flag" id="flag8"></div>
+  <div class="flag-text" id="flag-text8">VICTORY!</div>
+  <div class="road" id="road9"></div>
+</div>
 
   
   </div>
@@ -684,18 +669,6 @@
         "flag": "am.svg"
       },
       {
-        "name": "VICTOR",
-        "roadLength": 5000,
-        "position": 0,
-        "flag": "Switzerland.svg"
-      },
-      {
-        "name": "MAREK",
-        "roadLength": 15000,
-        "position": 0,
-        "flag": "sk.svg"
-      },
-      {
         "name": "DAVID",
         "roadLength": 35000,
         "position": 0,
@@ -704,6 +677,12 @@
     {
         "name": "TOM",
         "roadLength": 25000,
+        "position": 0,
+        "flag": "am.svg"
+      },
+	  {
+        "name": "TOTAL",
+        "roadLength": 405000,
         "position": 0,
         "flag": "am.svg"
       }
@@ -812,14 +791,12 @@ driversData[3].position = 0 / driversData[3].roadLength;
 driversData[4].position =  60000 / driversData[4].roadLength;
 //Ryan
 driversData[5].position = 0 / driversData[5].roadLength;
-//Victor
-driversData[6].position = 0 / driversData[6].roadLength;
-//Marek
-driversData[7].position = 0 / driversData[7].roadLength;
 //David
-driversData[8].position = 6811 / driversData[8].roadLength;
+driversData[6].position = 6811 / driversData[6].roadLength;
 //Tom
-driversData[9].position = 0 / driversData[9].roadLength;
+driversData[7].position = 0 / driversData[7].roadLength;
+//TOTAL
+driversData[8].position = 0 / driversData[8].roadLength;
 
 moveCar(0);
 moveCar(1);
@@ -830,7 +807,7 @@ moveCar(5);
 moveCar(6);
 moveCar(7);
 moveCar(8);
-moveCar(9);
+
   function showVictory(driverIndex) {
     var flag = document.getElementById("flag" + driverIndex);
    flag.style.backgroundImage = "url('finish.gif')";
