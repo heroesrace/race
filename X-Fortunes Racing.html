@@ -274,7 +274,7 @@
   text-align: center;
   width: 300px;
   height: 300px;
-  background-image: url('car_chris_n.gif'); /* Укажите путь к новому изображению */
+  background-image: url('car_chris_n1.gif'); /* Укажите путь к новому изображению */
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -592,10 +592,39 @@
 </div>
 
 
+<div class="road-container">
+  <div class="start-line"></div>
+  <div class="car chris-car" id="car7">
+    <div class="driver-info">
+          <img src="Czechia.svg" class="driver-flag" alt="Flag">
+          <div class="driver-name">ANNA</div>
+          <div class="driver-position">Position: 0%</div>
+      </div>
+  </div>
+  <div class="flag" id="flag7"></div>
+  <div class="flag-text" id="flag-text7">VICTORY!</div>
+  <div class="road" id="road8"></div>
+</div>
 
 <div class="road-container">
   <div class="start-line"></div>
-  <div class="car tom-car" id="car7">
+  <div class="car ryan-car" id="car8">
+    <div class="driver-info">
+          <img src="sk.svg" class="driver-flag" alt="Flag">
+          <div class="driver-name">MATEO</div>
+          <div class="driver-position">Position: 0%</div>
+      </div>
+  </div>
+  <div class="flag" id="flag8"></div>
+  <div class="flag-text" id="flag-text8">VICTORY!</div>
+  <div class="road" id="road9"></div>
+</div>
+
+
+
+<div class="road-container">
+  <div class="start-line"></div>
+  <div class="car tom-car" id="car9">
     <div class="driver-info">
           <img src="am.svg" class="driver-flag" alt="Flag">
           <div class="driver-name">DOM</div>
@@ -605,16 +634,16 @@
           </div>
       </div>
   </div>
-  <div class="flag" id="flag7"></div>
-  <div class="flag-text" id="flag-text7">VICTORY!</div>
-  <div class="road" id="road8"></div>
+  <div class="flag" id="flag9"></div>
+  <div class="flag-text" id="flag-text9">VICTORY!</div>
+  <div class="road" id="road10"></div>
 </div>
 
 
 
 <div class="road-container">
   <div class="start-line"></div>
-  <div class="car jayden-car" id="car8">
+  <div class="car jayden-car" id="car10">
     <div class="driver-info">
           <img src="euro.jpg" class="driver-flag" alt="Flag">
           <div class="driver-name">TEAM</div>
@@ -622,9 +651,9 @@
          
       </div>
   </div>
-  <div class="flag" id="flag8"></div>
-  <div class="flag-text" id="flag-text8">VICTORY!</div>
-  <div class="road" id="road9"></div>
+  <div class="flag" id="flag10"></div>
+  <div class="flag-text" id="flag-text10">VICTORY!</div>
+  <div class="road" id="road11"></div>
 </div>
 
   
@@ -671,6 +700,18 @@
       {
         "name": "DAVID",
         "roadLength": 35000,
+        "position": 0,
+        "flag": "sk.svg"
+      },
+      {
+        "name": "ANNA",
+        "roadLength": 5000,
+        "position": 0,
+        "flag": "sk.svg"
+      },
+      {
+        "name": "MATEO",
+        "roadLength": 5000,
         "position": 0,
         "flag": "sk.svg"
       },
@@ -793,10 +834,14 @@ driversData[4].position =  74679 / driversData[4].roadLength;
 driversData[5].position = 5772 / driversData[5].roadLength;
 //David
 driversData[6].position = 14257 / driversData[6].roadLength;
+//Anna
+driversData[7].position = 543 / driversData[7].roadLength;
+//Mateo
+driversData[8].position = 0 / driversData[8].roadLength;
 //Tom
-driversData[7].position = 6905 / driversData[7].roadLength;
+driversData[9].position = 6905 / driversData[9].roadLength;
 //TOTAL
-driversData[8].position = 365327 / driversData[8].roadLength;
+driversData[10].position = 365327 / driversData[10].roadLength;
 
 moveCar(0);
 moveCar(1);
@@ -807,6 +852,8 @@ moveCar(5);
 moveCar(6);
 moveCar(7);
 moveCar(8);
+moveCar(9);
+moveCar(10);
 
   function showVictory(driverIndex) {
     var flag = document.getElementById("flag" + driverIndex);
