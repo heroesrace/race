@@ -112,7 +112,7 @@ animation: night 45s linear infinite;
     text-align: center;
   }
   .road-container {
-    height: 90px;
+    height: 80px;
 	top: 53px;
 	padding: 0px;
     width: 101%;
@@ -120,7 +120,7 @@ animation: night 45s linear infinite;
     position: relative;
   }
   .road {
-    height: 89px;
+    height: 79px;
     width: 200%;
     background-image: url("road.jpg");
     background-repeat: repeat-x;
@@ -363,6 +363,20 @@ animation: night 45s linear infinite;
   transform-origin: bottom;
   z-index: 5;
 }
+.anna-car {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  background-image: url('car_anna.gif'); /* Укажите путь к новому изображению */
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 1;
+  left: 0;
+  margin-top: -70px;
+  transform-origin: bottom;
+  z-index: 5;
+}
 .george-car {
   text-align: center;
   width: 300px;
@@ -382,6 +396,20 @@ animation: night 45s linear infinite;
   width: 300px;
   height: 300px;
   background-image: url('scooter.gif'); /* Укажите путь к новому изображению */
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 1;
+  left: 0;
+  margin-top: -70px;
+  transform-origin: bottom;
+  z-index: 5;
+}
+.team-car {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  background-image: url('car_team.gif'); /* Укажите путь к новому изображению */
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -651,7 +679,7 @@ animation: night 45s linear infinite;
    <div class="road-container">
     
       <div class="start-line"></div>
-      <div class="car ryan-car" id="car7">
+      <div class="car anna-car" id="car7">
         <div class="driver-info">
           <div class="driver-name">ANNA</div>
           <div class="driver-position">Position: 0%</div>
@@ -663,11 +691,27 @@ animation: night 45s linear infinite;
     </div>
 		<div class="bushes3"></div>
   </div>
+
+  <div class="road-container">
+    
+    <div class="start-line"></div>
+    <div class="car ryan-car" id="car8">
+      <div class="driver-info">
+        <div class="driver-name">RYAN</div>
+        <div class="driver-position">Position: 0%</div>
+      </div>
+    </div>
+    <div class="flag" id="flag8"></div>
+    <div class="flag-text" id="flag-text8">VICTORY!</div>
+  <div class="road" id="road9">
+  </div>
+  <div class="bushes3"></div>
+</div>
   
   <div class="road-container">
     
       <div class="start-line"></div>
-      <div class="car tom-car" id="car8">
+      <div class="car tom-car" id="car9">
         <div class="driver-info">
           <div class="driver-name">DOM</div>
           <div class="driver-position">Position: 0%</div>
@@ -676,12 +720,28 @@ animation: night 45s linear infinite;
 </div>
         </div>
       </div>
-      <div class="flag" id="flag8"></div>
-      <div class="flag-text" id="flag-text8">VICTORY!</div>
-	  <div class="road" id="road9">
+      <div class="flag" id="flag9"></div>
+      <div class="flag-text" id="flag-text9">VICTORY!</div>
+	  <div class="road" id="road10">
     </div>
     <div class="bushes2"></div>
   </div>
+
+  <div class="road-container">
+    
+    <div class="start-line"></div>
+    <div class="car team-car" id="car10">
+      <div class="driver-info">
+        <div class="driver-name">TEAM</div>
+        <div class="driver-position">Position: 0%</div>
+      </div>
+    </div>
+    <div class="flag" id="flag10"></div>
+    <div class="flag-text" id="flag-text10">VICTORY!</div>
+  <div class="road" id="road11">
+  </div>
+  <div class="bushes2"></div>
+</div>
   
   </div>
 
@@ -727,11 +787,21 @@ animation: night 45s linear infinite;
       "roadLength": 50000,
       "position": 0
     },
+    {
+      "name": "RYAN",
+      "roadLength": 45000,
+      "position": 0
+    },
 	{
       "name": "DOMINQUE",
       "roadLength": 25000,
       "position": 0
-    }
+    },
+    {
+      "name": "TEAM",
+      "roadLength": 510000,
+      "position": 0
+    },
   ];
   
   // Создайте массив сообщений поддержки для водителя TOM
@@ -829,9 +899,14 @@ driversData[5].position =  0/ driversData[5].roadLength;
 // Обновляем позицию водителя Mia
 driversData[6].position =  0 / driversData[6].roadLength;
 // Обновляем позицию водителя Anna
-driversData[7].position =  572 / driversData[7].roadLength;
+driversData[7].position =  1150 / driversData[7].roadLength;
+// Обновляем позицию водителя Ryan
+driversData[8].position =  1067 / driversData[8].roadLength;
 // Обновляем позицию водителя Dominique
-driversData[8].position =  0 / driversData[8].roadLength;
+driversData[9].position =  0 / driversData[9].roadLength;
+// Обновляем позицию водителя Team
+driversData[10].position =  24467 / driversData[10].roadLength;
+
 
 moveCar(0); // Переместить автомобиль первого водителя
 moveCar(1); // Переместить автомобиль второго водителя
@@ -842,6 +917,8 @@ moveCar(5); // Переместить автомобиль второго вод
 moveCar(6); // Переместить автомобиль второго водителя
 moveCar(7); // Переместить автомобиль второго водителя
 moveCar(8); // Переместить автомобиль второго водителя
+moveCar(9); // Переместить автомобиль второго водителя
+moveCar(10); // Переместить автомобиль второго водителя
 
   function showVictory(driverIndex) {
     var flag = document.getElementById("flag" + driverIndex);
