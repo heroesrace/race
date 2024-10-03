@@ -804,26 +804,26 @@ animation: night 45s linear infinite;
     },
   ];
   
-  // Создайте массив сообщений поддержки для водителя JAYDEN
-var jaydenSupportMessages = [
+  // Создайте массив сообщений поддержки для водителя TOM
+var tomSupportMessages = [
   "Come on!",
   "Do it together!",
   "To the end!",
   "Who wants kebabs?",
 
-  // Добавьте другие сообщения поддержки для JAYDEN
+  // Добавьте другие сообщения поддержки для TOM
 ];
 
-// Создайте переменную, которая будет отслеживать индекс текущего сообщения поддержки для JAYDEN
-var jaydenSupportMessageIndex = 0;
+// Создайте переменную, которая будет отслеживать индекс текущего сообщения поддержки для TOM
+var tomSupportMessageIndex = 0;
 
 // Получите элемент, который будет отображать сообщения поддержки
 var supportMessageElement = document.getElementById("support-message");
 
 // Напишите функцию, которая будет изменять текст сообщения поддержки каждые несколько секунд
 function changeSupportMessage() {
-  supportMessageElement.textContent = jaydenSupportMessages[jaydenSupportMessageIndex];
-  jaydenSupportMessageIndex = (jaydenSupportMessageIndex + 1) % jaydenSupportMessages.length;
+  supportMessageElement.textContent = tomSupportMessages[tomSupportMessageIndex];
+  tomSupportMessageIndex = (tomSupportMessageIndex + 1) % tomSupportMessages.length;
 }
 
 // Вызовите функцию changeSupportMessage после загрузки страницы
