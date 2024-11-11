@@ -17,7 +17,7 @@
   }
   
   .road-container {
-    height: 75px;
+    height: 87px;
 	top: 0px;
 	margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@
     position: relative;
   }
   .road {
-    height: 76px;
+    height: 86px;
     width: 200%;
     background-image: url("road.jpg");
     background-repeat: repeat-x;
@@ -684,43 +684,10 @@
 <div class="bushes1"></div>
 </div>
 
-<div class="road-container">
-    
-  <div class="start-line"></div>
-  <div class="car thomas-car" id="car11">
-    <div class="driver-info">
-      <div class="driver-name">THOMAS</div>
-      <div class="driver-position">Position: 0%</div>
-    </div>
-  </div>
-  <div class="flag" id="flag11"></div>
-  <div class="flag-text" id="flag-text11">VICTORY!</div>
-<div class="road" id="road12">
-</div>
-<div class="bushes"></div>
-</div>
-
-<div class="road-container">
-    
-  <div class="start-line"></div>
-  <div class="car theodor-car" id="car12">
-    <div class="driver-info">
-      <div class="driver-name">PETER</div>
-      <div class="driver-position">Position: 0%</div>
-    
-    </div>
-  </div>
-  <div class="flag" id="flag12"></div>
-  <div class="flag-text" id="flag-text12">VICTORY!</div>
-<div class="road" id="road13">
-</div>
-<div class="bushes1"></div>
-</div>
-
   <div class="road-container">
     
     <div class="start-line"></div>
-    <div class="car team-car" id="car13">
+    <div class="car team-car" id="car11">
       <div class="driver-info">
         <div class="driver-name">TEAM</div>
         <div class="driver-position">Position: 0%</div>
@@ -729,9 +696,9 @@
         </div>
       </div>
     </div>
-    <div class="flag" id="flag13"></div>
-    <div class="flag-text" id="flag-text13">VICTORY!</div>
-  <div class="road" id="road14">
+    <div class="flag" id="flag11"></div>
+    <div class="flag-text" id="flag-text11">VICTORY!</div>
+  <div class="road" id="road12">
   </div>
   <div class="bushes"></div>
   </div>
@@ -797,18 +764,8 @@
       "position": 0
     },
     {
-      "name": "THOMAS",
-      "roadLength": 10000,
-      "position": 0
-    },
-    {
-      "name": "PETER",
-      "roadLength": 10000,
-      "position": 0
-    },
-    {
       "name": "TEAM",
-      "roadLength": 792000,
+      "roadLength": 790000,
       "position": 0
     },
   ];
@@ -916,12 +873,8 @@ driversData[8].position =  0 / driversData[8].roadLength;
 driversData[9].position =  0 / driversData[9].roadLength;
 // Обновляем позицию водителя Paul
 driversData[10].position =  0 / driversData[10].roadLength;
-// Обновляем позицию водителя Thomas
-driversData[11].position =  0 / driversData[11].roadLength;
-// Обновляем позицию водителя Peter
-driversData[12].position =  0 / driversData[12].roadLength;
 // Обновляем позицию водителя Team
-driversData[13].position =  0 / driversData[13].roadLength;
+driversData[11].position =  0 / driversData[11].roadLength;
 
 moveCar(0); // Переместить автомобиль первого водителя
 moveCar(1); // Переместить автомобиль второго водителя
@@ -935,8 +888,6 @@ moveCar(8); // Переместить автомобиль второго вод
 moveCar(9); // Переместить автомобиль второго водителя
 moveCar(10); // Переместить автомобиль второго водителя
 moveCar(11); // Переместить автомобиль второго водителя
-moveCar(12); // Переместить автомобиль второго водителя
-moveCar(13); // Переместить автомобиль второго водителя
 
   function showVictory(driverIndex) {
     var flag = document.getElementById("flag" + driverIndex);
