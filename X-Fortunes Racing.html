@@ -17,7 +17,7 @@
   }
   
   .road-container {
-    height: 87px;
+    height: 81px;
 	top: 0px;
 	margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@
     position: relative;
   }
   .road {
-    height: 86px;
+    height: 81px;
     width: 200%;
     background-image: url("road.jpg");
     background-repeat: repeat-x;
@@ -684,10 +684,26 @@
 <div class="bushes1"></div>
 </div>
 
+<div class="road-container">
+    
+  <div class="start-line"></div>
+  <div class="car thomas-car" id="car11">
+    <div class="driver-info">
+      <div class="driver-name">BEN</div>
+      <div class="driver-position">Position: 0%</div>
+    </div>
+  </div>
+  <div class="flag" id="flag11"></div>
+  <div class="flag-text" id="flag-text11">VICTORY!</div>
+<div class="road" id="road12">
+</div>
+<div class="bushes1"></div>
+</div>
+
   <div class="road-container">
     
     <div class="start-line"></div>
-    <div class="car team-car" id="car11">
+    <div class="car team-car" id="car12">
       <div class="driver-info">
         <div class="driver-name">TEAM</div>
         <div class="driver-position">Position: 0%</div>
@@ -696,9 +712,9 @@
         </div>
       </div>
     </div>
-    <div class="flag" id="flag11"></div>
-    <div class="flag-text" id="flag-text11">VICTORY!</div>
-  <div class="road" id="road12">
+    <div class="flag" id="flag12"></div>
+    <div class="flag-text" id="flag-text12">VICTORY!</div>
+  <div class="road" id="road13">
   </div>
   <div class="bushes"></div>
   </div>
@@ -709,32 +725,32 @@
   var driversData = [
     {
       "name": "JAYDEN",
-      "roadLength": 250000,
+      "roadLength": 150000,
       "position": 0
     },
     {
       "name": "SASHA",
-      "roadLength": 80000,
+      "roadLength": 50000,
       "position": 0
     },
     {
       "name": "CHRIS N",
-      "roadLength": 50000,
+      "roadLength": 35000,
       "position": 0
     },
 	{
       "name": "GEORGE",
-      "roadLength": 80000,
+      "roadLength": 50000,
       "position": 0
     },
 	{
       "name": "ALEXANDER",
-      "roadLength": 15000,
+      "roadLength": 20000,
       "position": 0
     },
 	{
       "name": "ANNA",
-      "roadLength": 50000,
+      "roadLength": 25000,
       "position": 0
     },
 	
@@ -745,17 +761,17 @@
     },
     {
       "name": "ANDREAL",
-      "roadLength": 75000,
+      "roadLength": 35000,
       "position": 0
     },
     {
       "name": "ANDREAF",
-      "roadLength": 10000,
+      "roadLength": 15000,
       "position": 0
     },
     {
       "name": "THEODOR",
-      "roadLength": 100000,
+      "roadLength": 25000,
       "position": 0
     },
     {
@@ -764,8 +780,13 @@
       "position": 0
     },
     {
+      "name": "BEN",
+      "roadLength": 10000,
+      "position": 0
+    },
+    {
       "name": "TEAM",
-      "roadLength": 790000,
+      "roadLength": 485000,
       "position": 0
     },
   ];
@@ -852,29 +873,31 @@ function moveCar(selectedDriver) {
 }
 
 // Обновляем позицию водителя Jayden
-driversData[0].position = 177630 / driversData[0].roadLength;
+driversData[0].position = 0 / driversData[0].roadLength;
 // Обновляем позицию водителя Nina
-driversData[1].position = 11117 / driversData[1].roadLength;
+driversData[1].position = 0 / driversData[1].roadLength;
 // Обновляем позицию водителя George
-driversData[3].position =  43825 / driversData[3].roadLength;
+driversData[3].position =  0 / driversData[3].roadLength;
 // Обновляем позицию водителя Ryan
-driversData[6].position =  15303 / driversData[6].roadLength;	
+driversData[6].position =  0 / driversData[6].roadLength;	
 // Обновляем позицию водителя Mateo
-driversData[2].position = 50000 / driversData[2].roadLength;	
+driversData[2].position = 0 / driversData[2].roadLength;	
 // Обновляем позицию водителя Anna
-driversData[5].position =  25251 / driversData[5].roadLength;	
+driversData[5].position =  0 / driversData[5].roadLength;	
 // Обновляем позицию водителя Alexander
-driversData[4].position =  15000 / driversData[4].roadLength;
+driversData[4].position =  0 / driversData[4].roadLength;
 // Обновляем позицию водителя Andrea L
-driversData[7].position =  42738 / driversData[7].roadLength;
+driversData[7].position =  0 / driversData[7].roadLength;
 // Обновляем позицию водителя Andrea F
-driversData[8].position =  9858 / driversData[8].roadLength;
+driversData[8].position =  0 / driversData[8].roadLength;
 // Обновляем позицию водителя Theodor
-driversData[9].position =  12698 / driversData[9].roadLength;
+driversData[9].position =  0 / driversData[9].roadLength;
 // Обновляем позицию водителя Paul
 driversData[10].position =  0 / driversData[10].roadLength;
+// Обновляем позицию водителя Ben
+driversData[11].position =  0 / driversData[11].roadLength;
 // Обновляем позицию водителя Team
-driversData[11].position =  394420 / driversData[11].roadLength;
+driversData[12].position =  0 / driversData[12].roadLength;
 
 moveCar(0); // Переместить автомобиль первого водителя
 moveCar(1); // Переместить автомобиль второго водителя
@@ -888,6 +911,7 @@ moveCar(8); // Переместить автомобиль второго вод
 moveCar(9); // Переместить автомобиль второго водителя
 moveCar(10); // Переместить автомобиль второго водителя
 moveCar(11); // Переместить автомобиль второго водителя
+moveCar(12); // Переместить автомобиль второго водителя
 
   function showVictory(driverIndex) {
     var flag = document.getElementById("flag" + driverIndex);
