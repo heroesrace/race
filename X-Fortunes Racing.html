@@ -17,7 +17,7 @@
   }
   
   .road-container {
-    height: 87px;
+    height: 81px;
 	top: 0px;
 	margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@
     position: relative;
   }
   .road {
-    height: 87px;
+    height: 81px;
     width: 200%;
     background-image: url("road.jpg");
     background-repeat: repeat-x;
@@ -714,10 +714,26 @@
 <div class="bushes1"></div>
 </div>
 
+<div class="road-container">
+    
+  <div class="start-line"></div>
+  <div class="car brian-car" id="car11">
+    <div class="driver-info">
+      <div class="driver-name">ADAM</div>
+      <div class="driver-position">Position: 0%</div>
+    </div>
+  </div>
+  <div class="flag" id="flag11"></div>
+  <div class="flag-text" id="flag-text11">VICTORY!</div>
+<div class="road" id="road12">
+</div>
+<div class="bushes1"></div>
+</div>
+
   <div class="road-container">
     
     <div class="start-line"></div>
-    <div class="car team-car" id="car11">
+    <div class="car team-car" id="car12">
       <div class="driver-info">
         <div class="driver-name">TEAM</div>
         <div class="driver-position">Position: 0%</div>
@@ -726,9 +742,9 @@
         </div>
       </div>
     </div>
-    <div class="flag" id="flag11"></div>
+    <div class="flag" id="flag12"></div>
     <div class="flag-text" id="flag-text12">VICTORY!</div>
-  <div class="road" id="road12">
+  <div class="road" id="road13">
   </div>
   <div class="bushes"></div>
   </div>
@@ -790,6 +806,11 @@
     },
     {
       "name": "FELIX",
+      "roadLength": 10000,
+      "position": 0
+    },
+    {
+      "name": "ADAM",
       "roadLength": 10000,
       "position": 0
     },
@@ -903,8 +924,10 @@ driversData[8].position =  0 / driversData[8].roadLength;
 driversData[9].position =  6430 / driversData[9].roadLength;
 // Обновляем позицию водителя Felix
 driversData[10].position =  1189 / driversData[10].roadLength;
+// Обновляем позицию водителя Adam
+driversData[11].position =  0 / driversData[11].roadLength;
 // Обновляем позицию водителя Team
-driversData[11].position =  275097 / driversData[11].roadLength;
+driversData[12].position =  275097 / driversData[12].roadLength;
 
 moveCar(0); // Переместить автомобиль первого водителя
 moveCar(1); // Переместить автомобиль первого водителя
@@ -918,7 +941,7 @@ moveCar(8); // Переместить автомобиль второго вод
 moveCar(9); // Переместить автомобиль второго водителя
 moveCar(10); // Переместить автомобиль второго водителя
 moveCar(11); // Переместить автомобиль второго водителя
-
+moveCar(12); // Переместить автомобиль второго водителя
 
   function showVictory(driverIndex) {
     var flag = document.getElementById("flag" + driverIndex);
