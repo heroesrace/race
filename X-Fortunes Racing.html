@@ -520,10 +520,10 @@
 	<link href="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/snow.min.css" rel="stylesheet">
 </head>
 <body>
-	<script src="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/Snow.min.js"></script>
-<script>
+	<!-- <script src="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/Snow.min.js"></script> -->
+<!-- <script>
 	new Snow ();
-</script>
+</script> -->
 <!-- <div class="grass-background"></div> -->
 <!-- <h1 class="header">Winter Is Coming</h1> -->
 <!-- <div class="background-image"> -->
@@ -604,7 +604,7 @@
   <div class="road-container">
     
     <div class="start-line"></div>
-    <div class="car andreal-car" id="car4">
+    <div class="car thomas-car" id="car4">
       <div class="driver-info">
         <div class="driver-name">ANDREA L</div>
         <div class="driver-position">Position: 0%</div>
@@ -614,7 +614,7 @@
     <div class="flag-text" id="flag-text4">VICTORY!</div>
   <div class="road" id="road5">
   </div>
-  <div class="bushes1"></div>
+  <div class="bushes"></div>
 </div>
 
 <div class="road-container">
@@ -630,7 +630,7 @@
   <div class="flag-text" id="flag-text5">VICTORY!</div>
 <div class="road" id="road6">
 </div>
-<div class="bushes"></div>
+<div class="bushes1"></div>
 </div>
 
 <div class="road-container">
@@ -663,13 +663,13 @@
   <div class="flag-text" id="flag-text7">VICTORY!</div>
 <div class="road" id="road8">
 </div>
-<div class="bushes1"></div>
+<div class="bushes"></div>
 </div>
 
 <div class="road-container">
     
   <div class="start-line"></div>
-  <div class="car thomas-car" id="car8">
+  <div class="car andreal-car" id="car8">
     <div class="driver-info">
       <div class="driver-name">BEN</div>
       <div class="driver-position">Position: 0%</div>
@@ -695,7 +695,7 @@
   <div class="flag-text" id="flag-text9">VICTORY!</div>
 <div class="road" id="road10">
 </div>
-<div class="bushes1"></div>
+<div class="bushes2"></div>
 </div>
 
 <div class="road-container">
@@ -711,7 +711,7 @@
   <div class="flag-text" id="flag-text10">VICTORY!</div>
 <div class="road" id="road11">
 </div>
-<div class="bushes1"></div>
+<div class="bushes"></div>
 </div>
 
 <div class="road-container">
@@ -746,7 +746,7 @@
     <div class="flag-text" id="flag-text12">VICTORY!</div>
   <div class="road" id="road13">
   </div>
-  <div class="bushes"></div>
+  <div class="bushes2"></div>
   </div>
   
   </div>
@@ -913,7 +913,7 @@ driversData[2].position =  0 / driversData[2].roadLength;
 // Обновляем позицию водителя Andrea L
 driversData[4].position =  0 / driversData[4].roadLength;
 // Обновляем позицию водителя Andrea F
-driversData[5].position =  1516 / driversData[5].roadLength;
+driversData[5].position =  0 / driversData[5].roadLength;
 // Обновляем позицию водителя Theodor
 driversData[6].position =  0 / driversData[6].roadLength;
 // Обновляем позицию водителя Paul
@@ -927,7 +927,7 @@ driversData[10].position =  0 / driversData[10].roadLength;
 // Обновляем позицию водителя Adam
 driversData[11].position =  0 / driversData[11].roadLength;
 // Обновляем позицию водителя Team
-driversData[12].position =  1280 / driversData[12].roadLength;
+driversData[12].position =  50000 / driversData[12].roadLength;
 
 moveCar(0); // Переместить автомобиль первого водителя
 moveCar(1); // Переместить автомобиль первого водителя
@@ -958,19 +958,19 @@ flag.classList.add("victory-flag"); // Добавляем новый класс
 }
 
 
-//смена дня и ночи
-function toggleDayNight() {
-    var dayBackground = document.querySelector(".background-image.day");
-    var nightBackground = document.querySelector(".background-image.night");
+// //смена дня и ночи
+// function toggleDayNight() {
+//     var dayBackground = document.querySelector(".background-image.day");
+//     var nightBackground = document.querySelector(".background-image.night");
 
-    if (dayBackground.style.display === "none") {
-        dayBackground.style.display = "block";
-        nightBackground.style.display = "none";
-    } else {
-        dayBackground.style.display = "none";
-        nightBackground.style.display = "block";
-    }
-}
+//     if (dayBackground.style.display === "none") {
+//         dayBackground.style.display = "block";
+//         nightBackground.style.display = "none";
+//     } else {
+//         dayBackground.style.display = "none";
+//         nightBackground.style.display = "block";
+//     }
+// }
 
 // Вызывайте функцию toggleDayNight каждые 5 секунд
 setInterval(toggleDayNight, 10000); // 5000 миллисекунд = 5 секунд
