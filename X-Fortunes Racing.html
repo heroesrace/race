@@ -17,7 +17,7 @@
   }
   
   .road-container {
-    height: 62.5px;
+    height: 66.5px;
 	top: 0px;
 	margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@
     position: relative;
   }
   .road {
-    height: 62.5px;
+    height: 66.5px;
     width: 200%;
     background-image: url("road.jpg");
     background-repeat: repeat-x;
@@ -675,12 +675,13 @@
 </div>
 </div>
 
+
 <div class="road-container">
     
   <div class="start-line"></div>
   <div class="car jayden-car" id="car8">
     <div class="driver-info">
-      <div class="driver-name">PHILLIP</div>
+      <div class="driver-name">FELIX</div>
       <div class="driver-position">Position: 0%</div>
     </div>
   </div>
@@ -688,14 +689,16 @@
   <div class="flag-text" id="flag-text8">VICTORY!</div>
 <div class="road" id="road9">
 </div>
+<div class="bushes4"></div>
 </div>
+
 
 <div class="road-container">
     
   <div class="start-line"></div>
   <div class="car jayden-car" id="car9">
     <div class="driver-info">
-      <div class="driver-name">FELIX</div>
+      <div class="driver-name">DAMIR</div>
       <div class="driver-position">Position: 0%</div>
     </div>
   </div>
@@ -703,16 +706,14 @@
   <div class="flag-text" id="flag-text9">VICTORY!</div>
 <div class="road" id="road10">
 </div>
-<div class="bushes4"></div>
 </div>
-
 
 <div class="road-container">
     
   <div class="start-line"></div>
   <div class="car jayden-car" id="car10">
     <div class="driver-info">
-      <div class="driver-name">DAMIR</div>
+      <div class="driver-name">NOAH</div>
       <div class="driver-position">Position: 0%</div>
     </div>
   </div>
@@ -720,6 +721,7 @@
   <div class="flag-text" id="flag-text10">VICTORY!</div>
 <div class="road" id="road11">
 </div>
+<div class="bushes4"></div>
 </div>
 
 <div class="road-container">
@@ -727,7 +729,7 @@
   <div class="start-line"></div>
   <div class="car jayden-car" id="car11">
     <div class="driver-info">
-      <div class="driver-name">NOAH</div>
+      <div class="driver-name">HARVEY</div>
       <div class="driver-position">Position: 0%</div>
     </div>
   </div>
@@ -735,7 +737,6 @@
   <div class="flag-text" id="flag-text11">VICTORY!</div>
 <div class="road" id="road12">
 </div>
-<div class="bushes4"></div>
 </div>
 
 <div class="road-container">
@@ -743,7 +744,7 @@
   <div class="start-line"></div>
   <div class="car jayden-car" id="car12">
     <div class="driver-info">
-      <div class="driver-name">HARVEY</div>
+      <div class="driver-name">MICHELE</div>
       <div class="driver-position">Position: 0%</div>
     </div>
   </div>
@@ -758,7 +759,7 @@
   <div class="start-line"></div>
   <div class="car jayden-car" id="car13">
     <div class="driver-info">
-      <div class="driver-name">MICHELE</div>
+      <div class="driver-name">FRANCESCO</div>
       <div class="driver-position">Position: 0%</div>
     </div>
   </div>
@@ -773,7 +774,7 @@
   <div class="start-line"></div>
   <div class="car jayden-car" id="car14">
     <div class="driver-info">
-      <div class="driver-name">FRANCESCO</div>
+      <div class="driver-name">CHRIS</div>
       <div class="driver-position">Position: 0%</div>
     </div>
   </div>
@@ -783,25 +784,10 @@
 </div>
 </div>
 
-<div class="road-container">
-    
-  <div class="start-line"></div>
-  <div class="car jayden-car" id="car15">
-    <div class="driver-info">
-      <div class="driver-name">CHRIS</div>
-      <div class="driver-position">Position: 0%</div>
-    </div>
-  </div>
-  <div class="flag" id="flag15"></div>
-  <div class="flag-text" id="flag-text15">VICTORY!</div>
-<div class="road" id="road16">
-</div>
-</div>
-
   <div class="road-container">
     
     <div class="start-line"></div>
-    <div class="car team-car" id="car16">
+    <div class="car team-car" id="car15">
       <div class="driver-info">
         <div class="driver-name">TEAM</div>
         <div class="driver-position">Position: 0%</div>
@@ -810,9 +796,9 @@
         </div>
       </div>
     </div>
-    <div class="flag" id="flag16"></div>
-    <div class="flag-text" id="flag-text16">VICTORY!</div>
-  <div class="road" id="road17">
+    <div class="flag" id="flag15"></div>
+    <div class="flag-text" id="flag-text15">VICTORY!</div>
+  <div class="road" id="road16">
   </div>
   <div class="bushes4"></div>
   </div>
@@ -862,11 +848,6 @@
       "position": 0
     },
     {
-      "name": "PHILLIP",
-      "roadLength": 25000,
-      "position": 0
-    },
-    {
       "name": "FELIX",
       "roadLength": 50000,
       "position": 0
@@ -903,7 +884,7 @@
     },
     {
       "name": "TEAM",
-      "roadLength": 775000,
+      "roadLength": 750000,
       "position": 0
     },
     
@@ -994,19 +975,17 @@ driversData[0].position = 0/ driversData[0].roadLength;
 // Обновляем позицию водителя Ryan
 driversData[3].position =  0 / driversData[3].roadLength;
 // Обновляем позицию водителя Felix
-driversData[9].position =  3594 / driversData[9].roadLength;
-// Обновляем позицию водителя Phillip
-driversData[8].position =  0 / driversData[8].roadLength;
+driversData[8].position =  3594 / driversData[8].roadLength;
 // Обновляем позицию водителя Harvey
-driversData[12].position =  3631 / driversData[12].roadLength;
+driversData[11].position =  3631 / driversData[11].roadLength;
 // Обновляем позицию водителя Noah
-driversData[11].position =  2499 / driversData[11].roadLength;
+driversData[10].position =  2499 / driversData[10].roadLength;
 // Обновляем позицию водителя Chris
-driversData[15].position =  0 / driversData[15].roadLength;
+driversData[14].position =  0 / driversData[14].roadLength;
 // Обновляем позицию водителя Mateo
 driversData[1].position = 2058 / driversData[1].roadLength;
 // Обновляем позицию водителя Damir
-driversData[10].position =  0 / driversData[10].roadLength;	
+driversData[9].position =  0 / driversData[9].roadLength;	
 // Обновляем позицию водителя Alexander
 driversData[2].position = 0 / driversData[2].roadLength;
 // Обновляем позицию водителя Andrea L
@@ -1014,15 +993,15 @@ driversData[4].position =  0 / driversData[4].roadLength;
 // Обновляем позицию водителя Andrea F
 driversData[5].position =  1134 / driversData[5].roadLength;
 // Обновляем позицию водителя Michele
-driversData[13].position =  1120 / driversData[13].roadLength;
+driversData[12].position =  1120 / driversData[12].roadLength;
 // Обновляем позицию водителя Francesсo
-driversData[14].position =  0 / driversData[14].roadLength;	
+driversData[13].position =  0 / driversData[13].roadLength;	
 // Обновляем позицию водителя Theodor
 driversData[6].position =  0 / driversData[6].roadLength;
 // Обновляем позицию водителя Ben
 driversData[7].position =  0 / driversData[7].roadLength;
 // Обновляем позицию водителя Team
-driversData[16].position =  0 / driversData[16].roadLength;
+driversData[15].position =  0 / driversData[15].roadLength;
 
 
 moveCar(0); // Переместить автомобиль первого водителя
@@ -1033,7 +1012,6 @@ moveCar(4); // Переместить автомобиль второго вод
 moveCar(5); // Переместить автомобиль второго водителя
 moveCar(6); // Переместить автомобиль второго водителя
 moveCar(7); // Переместить автомобиль второго водителя
-moveCar(8); // Переместить автомобиль второго водителя
 moveCar(9); // Переместить автомобиль второго водителя
 moveCar(10); // Переместить автомобиль второго водителя
 moveCar(11); // Переместить автомобиль второго водителя
@@ -1041,7 +1019,6 @@ moveCar(12); // Переместить автомобиль второго во�
 moveCar(13); // Переместить автомобиль второго водителя
 moveCar(14); // Переместить автомобиль второго водителя
 moveCar(15); // Переместить автомобиль второго водителя
-moveCar(16); // Переместить автомобиль второго водителя
 
 
 
