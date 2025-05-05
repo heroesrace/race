@@ -17,7 +17,7 @@
   }
   
   .road-container {
-    height: 66.5px;
+    height: 71px;
 	top: 0px;
 	margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@
     position: relative;
   }
   .road {
-    height: 66.5px;
+    height: 71px;
     width: 200%;
     background-image: url("road.jpg");
     background-repeat: repeat-x;
@@ -744,7 +744,7 @@
   <div class="start-line"></div>
   <div class="car jayden-car" id="car12">
     <div class="driver-info">
-      <div class="driver-name">MICHELE</div>
+      <div class="driver-name">FRANCESCO</div>
       <div class="driver-position">Position: 0%</div>
     </div>
   </div>
@@ -759,7 +759,7 @@
   <div class="start-line"></div>
   <div class="car jayden-car" id="car13">
     <div class="driver-info">
-      <div class="driver-name">FRANCESCO</div>
+      <div class="driver-name">CHRIS</div>
       <div class="driver-position">Position: 0%</div>
     </div>
   </div>
@@ -769,25 +769,10 @@
 </div>
 </div>
 
-<div class="road-container">
-    
-  <div class="start-line"></div>
-  <div class="car jayden-car" id="car14">
-    <div class="driver-info">
-      <div class="driver-name">CHRIS</div>
-      <div class="driver-position">Position: 0%</div>
-    </div>
-  </div>
-  <div class="flag" id="flag14"></div>
-  <div class="flag-text" id="flag-text14">VICTORY!</div>
-<div class="road" id="road15">
-</div>
-</div>
-
   <div class="road-container">
     
     <div class="start-line"></div>
-    <div class="car team-car" id="car15">
+    <div class="car team-car" id="car14">
       <div class="driver-info">
         <div class="driver-name">TEAM</div>
         <div class="driver-position">Position: 0%</div>
@@ -796,9 +781,9 @@
         </div>
       </div>
     </div>
-    <div class="flag" id="flag15"></div>
-    <div class="flag-text" id="flag-text15">VICTORY!</div>
-  <div class="road" id="road16">
+    <div class="flag" id="flag14"></div>
+    <div class="flag-text" id="flag-text14">VICTORY!</div>
+  <div class="road" id="road15">
   </div>
   <div class="bushes4"></div>
   </div>
@@ -864,11 +849,6 @@
     },
     {
       "name": "HARVEY",
-      "roadLength": 25000,
-      "position": 0
-    },
-    {
-      "name": "MICHELE",
       "roadLength": 25000,
       "position": 0
     },
@@ -981,7 +961,7 @@ driversData[11].position =  3631 / driversData[11].roadLength;
 // Обновляем позицию водителя Noah
 driversData[10].position =  2499 / driversData[10].roadLength;
 // Обновляем позицию водителя Chris
-driversData[14].position =  0 / driversData[14].roadLength;
+driversData[13].position =  0 / driversData[13].roadLength;
 // Обновляем позицию водителя Mateo
 driversData[1].position = 924 / driversData[1].roadLength;
 // Обновляем позицию водителя Damir
@@ -991,17 +971,15 @@ driversData[2].position = 0 / driversData[2].roadLength;
 // Обновляем позицию водителя Andrea L
 driversData[4].position =  0 / driversData[4].roadLength;
 // Обновляем позицию водителя Andrea F
-driversData[5].position =  7953 / driversData[5].roadLength;
-// Обновляем позицию водителя Michele
-driversData[12].position =  1120 / driversData[12].roadLength;
+driversData[5].position =  9072 / driversData[5].roadLength;
 // Обновляем позицию водителя Francesсo
-driversData[13].position =  0 / driversData[13].roadLength;	
+driversData[12].position =  0 / driversData[12].roadLength;	
 // Обновляем позицию водителя Theodor
 driversData[6].position =  0 / driversData[6].roadLength;
 // Обновляем позицию водителя Ben
 driversData[7].position =  0 / driversData[7].roadLength;
 // Обновляем позицию водителя Team
-driversData[15].position =  0 / driversData[15].roadLength;
+driversData[14].position =  0 / driversData[14].roadLength;
 
 
 moveCar(0); // Переместить автомобиль первого водителя
@@ -1018,8 +996,6 @@ moveCar(11); // Переместить автомобиль второго во�
 moveCar(12); // Переместить автомобиль второго водителя
 moveCar(13); // Переместить автомобиль второго водителя
 moveCar(14); // Переместить автомобиль второго водителя
-moveCar(15); // Переместить автомобиль второго водителя
-
 
 
 
